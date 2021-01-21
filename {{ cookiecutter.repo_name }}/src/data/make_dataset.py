@@ -6,14 +6,17 @@ from dotenv import find_dotenv, load_dotenv
 
 
 @click.command()
-@click.argument('input_filepath', type=click.Path(exists=True))
-@click.argument('output_filepath', type=click.Path())
-def main(input_filepath, output_filepath):
+@click.argument('data_dir', type=click.Path(exists=True))
+def main(data_dir):
     """ Runs data processing scripts to turn raw data from (../raw) into
         cleaned data ready to be analyzed (saved in ../processed).
     """
     logger = logging.getLogger(__name__)
     logger.info('making final data set from raw data')
+    data = Path(data_dir).resolve()
+    raw = data/'raw'
+    (data/'interim').mkdir(exist_ok=True)
+    (data/'processed').mkdir(exist_ok=True)
 
 
 if __name__ == '__main__':

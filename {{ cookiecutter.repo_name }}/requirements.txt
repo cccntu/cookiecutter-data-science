@@ -13,3 +13,36 @@ python-dotenv>=0.5.1
 # backwards compatibility
 pathlib2
 {% endif %}
+
+# notebook
+notebook
+nbautoexport
+
+# data
+seaborn
+pandas
+pandas-profiling[notebook]
+pandas_path
+
+{% if cookiecutter.modeling_project == 'y' %}
+# modeling
+hydra-core
+pytorch-lightning
+scikit-learn
+transformers # cosine lr, AdamW
+{% endif %}
+
+# style
+nb_black
+autoflake
+black
+isort
+
+{% if cookiecutter.image_task == 'y' %}
+# image
+imageio
+Pillow
+timm
+efficientnet_pytorch
+albumentations
+{% endif %}
