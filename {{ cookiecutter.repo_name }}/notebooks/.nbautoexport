@@ -1,0 +1,13 @@
+{
+  "export_formats": [
+    "script",
+    "html"
+  ],
+  "organize_by": "extension",
+  "clean": {
+    "exclude": [
+      "report/*",
+      "lightning_logs/**/*"
+    ]
+  }
+}
