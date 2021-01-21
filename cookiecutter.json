@@ -8,5 +8,5 @@
     "aws_profile": "default",
     "python_interpreter": ["python3", "python"],
     "modeling_project": ["y", "n"],
-    "image_task": ["y", "n"],
+    "image_task": ["y", "n"]
 }
