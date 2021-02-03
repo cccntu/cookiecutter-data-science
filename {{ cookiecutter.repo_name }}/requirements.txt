@@ -21,6 +21,7 @@ nbautoexport
 # data
 seaborn
 pandas
+datatable
 pandas-profiling[notebook]
 pandas_path
 
@@ -28,7 +29,10 @@ pandas_path
 # modeling
 hydra-core
 pytorch-lightning
+optuna
 scikit-learn
+xgboost==1.2.1 # kaggle version
+wandb
 transformers # cosine lr, AdamW
 {% endif %}
 
