@@ -7,7 +7,9 @@
   "clean": {
     "exclude": [
       "report/*",
-      "lightning_logs/**/*"
+      "wandb/**/*",
+      "lightning_logs/**/*",
+      "*"
     ]
   }
 }
