@@ -17,6 +17,7 @@ pathlib2
 # notebook
 notebook
 nbautoexport
+jupyterlab
 
 # data
 seaborn
@@ -29,10 +30,11 @@ pandas_path
 # modeling
 hydra-core
 pytorch-lightning
+wandb
 optuna
 scikit-learn
 xgboost==1.2.1 # kaggle version
-wandb
+catboost
 transformers # cosine lr, AdamW
 {% endif %}
 

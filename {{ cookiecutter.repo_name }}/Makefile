@@ -23,7 +23,7 @@ notebooks/script/%.py : notebooks/%.ipynb
 	nbautoexport export $?
 style:
 	autoflake --in-place --remove-unused-variables -r . --exclude notebooks --exclude data
-	python -m black . --exclude notebooks
+	python -m black . --exclude '/(notebooks|wandb/)'
 	isort . --atomic --skip notebook --skip data
 
 
